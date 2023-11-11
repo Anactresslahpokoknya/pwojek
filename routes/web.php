@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//siswa
+Route::get('/', function () {return view('Siswa.Login');});
+Route::get('IndexSiswa', function () {return view('Siswa.IndexSiswa');});
+Route::get('siswa', [SiswaController::class, 'login']);
+Route::post('siswa', [SiswaController::class, 'ceklogin']);
+
+//admin
+Route::get('/', function () {return view('Admin.Login');});
+Route::get('IndexAdmin', function () {return view('Admin.IndexAdmin');});
+Route::get('datasiswa', function () {return view('Admin.DataSiswa');});
+Route::get('admin', [AdminController::class, 'LoginAdmin']);
+Route::post('admin', [AdminController::class, 'LoginAdminCek']);
