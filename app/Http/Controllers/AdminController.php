@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\pembayaran;
 use App\Models\petugas;
 use App\Models\siswa;
 use Illuminate\Http\Request;
@@ -25,15 +26,30 @@ public function LoginAdminCek(Request $request){
     }
     return back();
 }
-public function dataSiswa(){
-    $N = new siswa();
-$N->create([
-    'id_pembayaran' => $N->id_pembayaran,
-    'nik' => $N->nik,
-    'isi_laporan' => $N->isi_laporan,
-    'foto' => $N->foto,
-]);
+public function Entry(Request $request){
+    $N = new pembayaran();
+    $N->create([
+        'id_pembayaran' => $request->id_pembayaran,
+        'id_petugas' => $request->id_petugas,
+        'nisn' => $request->nisn,
+        'tgl_bayar' => $request->tgl_bayar,
+        'bulan_dibayar' => $request->bulan_dibayar,
+        'tahun_dibayar' => $request->tahun_dibayar,
+        'id_spp' => $request->id_spp,
+        'jumlah_bayar' => $request->jumlah_bayar,
+    ]);
 
-return back()->with('pesan', 'selamat, registrasi berhasil');
+    return back()->with('pesan', 'selamat, registrasi berhasil');
 }
+public function lk()
+{
+    return view('Admin.EntriTransaksiPembayaran');
+}
+
+public function validasi()
+{
+    $m = new siswa();
+    return view('Admin.DataSiswa', ['wg' => $m->all()]);
+}
+
 }

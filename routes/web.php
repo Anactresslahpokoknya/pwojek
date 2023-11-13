@@ -31,3 +31,7 @@ Route::get('IndexAdmin', function () {return view('Admin.IndexAdmin');});
 Route::get('datasiswa', function () {return view('Admin.DataSiswa');});
 Route::get('admin', [AdminController::class, 'LoginAdmin']);
 Route::post('admin', [AdminController::class, 'LoginAdminCek']);
+Route::get('pp', function () {return view('Admin.EntriTransaksiPembayaran');});
+Route::get('jk', [AdminController::class, 'lk']);
+Route::get('ppo', [AdminController::class, 'Entry']);
+Route::get('jjk', [AdminController::class, 'validasi']);

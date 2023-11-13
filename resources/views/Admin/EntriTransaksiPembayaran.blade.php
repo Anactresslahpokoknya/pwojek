@@ -1,9 +1,9 @@
-@extends('Siswa.LayoutSiswa')
-@section('isi_halaman')
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="card" style="width: 18rem;">
+@extends('Admin.LayoutAdmin')
+@section('content')
+    <div class="d-flex justify-content-center align-items-center vh-10000">
+        <div class="card pt-4" style="width: 50rem;">
             <div class="card-body">
-                <form action="{{ url('#') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ url('ppo') }}" method="get" enctype="multipart/form-data">
                     @csrf
                     <h1>Entri Transaksi Pembayaran</h1>
                     <div class="mb-3">

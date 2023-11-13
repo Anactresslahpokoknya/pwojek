@@ -1,6 +1,6 @@
 @extends('Admin.LayoutAdmin')
 @section('content')
-    <form action="" method="post">
+    <form action="{{ url('#') }}" method="get">
         @csrf
         <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
             <h4 class="card-title">Data Siswa</h4>
@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($data as $inem)
+                    @foreach ($wg as $inem)
                         <tr>
                             <td>{{ $inem->nisn }}</td>
                             <td>{{ $inem->nis }}</td>

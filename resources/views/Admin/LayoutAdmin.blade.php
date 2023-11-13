@@ -28,7 +28,7 @@
                             Dashboard
                         </a>
                         <li class="nav-item mb-1">
-                            <a href="{{ url('datasiswa') }}" class="nav-link ">
+                            <a href="{{ url('jjk') }}" class="nav-link ">
                                 <i class="bi bi-file-earmark-text-fill"></i>
                                 Data Siswa
                             </a>
@@ -48,7 +48,7 @@
                                             Data SPP
                                         </a>
                                         <li class="nav-item mb-1">
-                                            <a href="{{ url('#') }}" class="nav-link ">
+                                            <a href="{{ url('pp') }}" class="nav-link ">
                                                 <i class="bi bi-file-earmark-text-fill"></i>
                                                 Entri Transaksi Pembayaran
                                             </a>
