@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\kelas;
 use App\Models\pembayaran;
 use App\Models\petugas;
 use App\Models\siswa;
+use App\Models\spp;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -50,6 +52,24 @@ public function validasi()
 {
     $m = new siswa();
     return view('Admin.DataSiswa', ['wg' => $m->all()]);
+}
+
+public function dtspp()
+{
+    $m = new spp();
+    return view('Admin.DataSpp', ['wg' => $m->all()]);
+}
+
+public function dtptgs()
+{
+    $m = new petugas();
+    return view('Admin.DataPetugas', ['wg' => $m->all()]);
+}
+
+public function dtkls()
+{
+    $m = new kelas();
+    return view('Admin.DataKelas', ['wg' => $m->all()]);
 }
 
 }

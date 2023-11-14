@@ -24,11 +24,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="bulan_dibayar" class="form-label">BULAN DIBAYAR</label>
-                        <input type="date" class="form-control" name="bulan_dibayar">
+                        <input type="text" class="form-control" name="bulan_dibayar">
                     </div>
                     <div class="mb-3">
                         <label for="tahun_dibayar" class="form-label">TAHUN DIBAYAR</label>
-                        <input type="date" class="form-control" name="tahun_dibayar">
+                        <input type="text" class="form-control" name="tahun_dibayar">
                     </div>
                     <div class="mb-3">
                         <label for="id_spp" class="form-label">ID SPP</label>

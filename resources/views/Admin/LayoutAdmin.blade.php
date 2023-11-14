@@ -23,7 +23,7 @@
             <div id="menu" class="mt-4 ">
                 <ul class="nav flex-column ">
                     <li class="nav-item mb-1">
-                        <a href="{{ url('#') }}" class="nav-link active">
+                        <a href="{{ url('IndexSiswa') }}" class="nav-link active">
                             <i class="bi bi-house-fill"></i>
                             Dashboard
                         </a>
@@ -33,17 +33,17 @@
                                 Data Siswa
                             </a>
                             <li class="nav-item mb-1">
-                                <a href="{{ url('#') }}" class="nav-link ">
+                                <a href="{{ url('megawatichan') }}" class="nav-link ">
                                     <i class="bi bi-file-earmark-text-fill"></i>
                                     Data Petugas
                                 </a>
                                 <li class="nav-item mb-1">
-                                    <a href="{{ url('#') }}" class="nav-link ">
+                                    <a href="{{ url('luhut') }}" class="nav-link ">
                                         <i class="bi bi-file-earmark-text-fill"></i>
                                         Data Kelas
                                     </a>
                                     <li class="nav-item mb-1">
-                                        <a href="{{ url('#') }}" class="nav-link ">
+                                        <a href="{{ url('jokowi') }}" class="nav-link ">
                                             <i class="bi bi-file-earmark-text-fill"></i>
                                             Data SPP
                                         </a>

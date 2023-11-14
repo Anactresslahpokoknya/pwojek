@@ -9,7 +9,7 @@ Bina Kerja Education Solution
         <div class="">
 
             <h3>Welcome To Our Family Let's be Part Of Us</h3>
-            <a href="{{ url('jjk') }}" type="button" class="btn btn-primary">Riwayat Pembayaran</a>
+            <a href="{{ url('jokowi') }}" type="button" class="btn btn-primary">Riwayat Pembayaran</a>
         </div>
     </div>
 @endsection
