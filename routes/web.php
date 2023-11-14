@@ -38,3 +38,4 @@ Route::get('jjk', [AdminController::class, 'validasi']);
 Route::get('jokowi', [AdminController::class, 'dtspp']);
 Route::get('megawatichan', [AdminController::class, 'dtptgs']);
 Route::get('luhut', [AdminController::class, 'dtkls']);
+Route::get('mahfud', [AdminController::class, 'laporan']);

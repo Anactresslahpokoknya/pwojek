@@ -72,4 +72,10 @@ public function dtkls()
     return view('Admin.DataKelas', ['wg' => $m->all()]);
 }
 
+public function laporan()
+{
+    $m = new pembayaran();
+    return view('Admin.GL', ['wg' => $m->all()]);
+}
+
 }

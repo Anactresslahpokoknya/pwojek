@@ -1,6 +1,6 @@
 @extends('Admin.LayoutAdmin')
 
-@section('title', '     Welcome To Our Family Lets be Part Of Us')
+@section('title', 'Welcome To Our Family Lets be Part Of Us')
 
 @section('content')
     <div class="row ">
