@@ -20,13 +20,13 @@ Route::get('/', function () {
 });
 
 //siswa
-Route::get('/', function () {return view('Siswa.Login');});
+Route::get('LS', function () {return view('Siswa.Login');});
 Route::get('IndexSiswa', function () {return view('Siswa.IndexSiswa');});
 Route::get('siswa', [SiswaController::class, 'login']);
 Route::post('siswa', [SiswaController::class, 'ceklogin']);
 
 //admin
-Route::get('/', function () {return view('Admin.Login');});
+Route::get('LA', function () {return view('Admin.Login');});
 Route::get('IndexAdmin', function () {return view('Admin.IndexAdmin');});
 Route::get('datasiswa', function () {return view('Admin.DataSiswa');});
 Route::get('admin', [AdminController::class, 'LoginAdmin']);
@@ -39,3 +39,11 @@ Route::get('jokowi', [AdminController::class, 'dtspp']);
 Route::get('megawatichan', [AdminController::class, 'dtptgs']);
 Route::get('luhut', [AdminController::class, 'dtkls']);
 Route::get('mahfud', [AdminController::class, 'laporan']);
+Route::get('ln', [AdminController::class, 'LandoNorris']);
+Route::get('mx', [AdminController::class, 'pk']);
+Route::get('max', [AdminController::class, 'MaxVerstappen']);
+Route::get('vv', [AdminController::class, 'gf']);
+Route::get('alphatauri', [AdminController::class, 'Grussel']);
+Route::get('mercedes', [AdminController::class, 'hamilton']);
+Route::get('mclaren', [AdminController::class, 'OscarPiastri']);
+Route::get('laren', [AdminController::class, 'norris']);

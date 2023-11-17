@@ -11,8 +11,6 @@
                 <thead>
                     <tr>
                         <th>ID PETUGAS</th>
-                        <th>USERNAME</th>
-                        <th>PASSWORD</th>
                         <th>NAMA PETUGAS</th>
                         <th>LEVEL</th>
                     </tr>
@@ -21,8 +19,6 @@
                     @foreach ($wg as $inem)
                         <tr>
                             <td>{{ $inem->id_petugas }}</td>
-                            <td>{{ $inem->username }}</td>
-                            <td>{{ $inem->password }}</td>
                             <td>{{ $inem->nama_petugas }}</td>
                             <td>{{ $inem->level }}</td>
                         </tr>

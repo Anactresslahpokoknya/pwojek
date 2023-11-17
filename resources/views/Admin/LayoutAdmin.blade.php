@@ -54,9 +54,15 @@
                                             </a>
                     </li>
                     <li class="nav-item mb-1">
-                        <a href="{{ url('mahfud') }}" class="nav-link ">
+                        <a href="{{ url('#') }}" class="nav-link ">
                             <i class="bi bi-file-earmark-text-fill"></i>
                             Generate Laporan
+                        </a>
+                    </a>
+                    <li class="nav-item mb-1">
+                        <a href="{{ url('mahfud') }}" class="nav-link ">
+                            <i class="bi bi-file-earmark-text-fill"></i>
+                            History Pembayaran
                         </a>
                 </ul>
             </div>

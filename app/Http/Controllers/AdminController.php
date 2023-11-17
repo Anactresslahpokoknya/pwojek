@@ -78,4 +78,77 @@ public function laporan()
     return view('Admin.GL', ['wg' => $m->all()]);
 }
 
+public function LandoNorris(Request $request){
+    $N = new siswa();
+    $N->create([
+        'nisn' => $request->nisn,
+        'nis' => $request->nis,
+        'nama' => $request->nama,
+        'id_kelas' => $request->id_kelas,
+        'alamat' => $request->alamat,
+        'no_telp' => $request->no_telp,
+        'id_spp' => $request->id_spp,
+        'username' => $request->username,
+        'password' => $request->password,
+    ]);
+
+    return back()->with('pesan', 'selamat, registrasi berhasil');
+}
+
+public function pk()
+{
+    return view('Admin.rds');
+}
+
+public function MaxVerstappen(Request $request){
+    $N = new petugas();
+    $N->create([
+        'id_petugas' => $request->id_petugas,
+        'username' => $request->username,
+        'password' => $request->password,
+        'nama_petugas' => $request->nama_petugas,
+        'level' => $request->level,
+    ]);
+
+    return back()->with('pesan', 'selamat, registrasi berhasil');
+}
+
+public function gf()
+{
+    return view('Admin.rdp');
+}
+
+public function Grussel(Request $request){
+    $N = new kelas();
+    $N->create([
+        'id_kelas' => $request->id_kelas,
+        'nama_kelas' => $request->nama_kelas,
+        'kompetensi_keahlian' => $request->kompetensi_keahlian,
+    ]);
+
+    return back()->with('pesan', 'selamat, registrasi berhasil');
+}
+
+public function hamilton()
+{
+    return view('Admin.rdk');
+}
+
+public function OscarPiastri(Request $request){
+    $N = new spp();
+    $N->create([
+        'id_spp' => $request->id_spp,
+        'tahun' => $request->tahun,
+        'nominal' => $request->nominal,
+    ]);
+
+    return back()->with('pesan', 'selamat, registrasi berhasil');
+}
+
+public function norris()
+{
+    return view('Admin.rdsp');
+}
+
+
 }
