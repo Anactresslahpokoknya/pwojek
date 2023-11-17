@@ -17,6 +17,7 @@
                         <th>ALAMAT</th>
                         <th>TELEPON</th>
                         <th>ID SPP</th>
+                        <th>AKSI</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +30,12 @@
                             <td>{{ $inem->alamat }}</td>
                             <td>{{ $inem->no_telp }}</td>
                             <td>{{ $inem->id_spp }}</td>
+                            <td><a href="#" class="btn btn-success btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a></td>
+                                <td><a href="{{url('siswa/hapus/'.$inem->nisn)}}" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash-fill"></i>
+                                </a></td>
                         </tr>
                     @endforeach
                 </tbody>

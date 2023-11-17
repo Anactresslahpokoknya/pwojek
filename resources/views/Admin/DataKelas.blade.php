@@ -13,6 +13,7 @@
                         <th>ID KELAS</th>
                         <th>NAMA KELAS</th>
                         <th>KOMPETENSI KEAHLIAN</th>
+                        <th>AKSI</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,6 +22,12 @@
                             <td>{{ $inem->id_kelas }}</td>
                             <td>{{ $inem->nama_kelas }}</td>
                             <td>{{ $inem->kompetensi_keahlian }}</td>
+                            <td><a href="#" class="btn btn-success btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                            </a></td>
+                            <td><a href="#" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash-fill"></i>
+                            </a></td>
                         </tr>
                     @endforeach
                 </tbody>

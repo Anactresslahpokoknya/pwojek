@@ -13,6 +13,7 @@
                         <th>ID SPP</th>
                         <th>TAHUN</th>
                         <th>NOMINAL</th>
+                        <th>AKSI</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,6 +22,12 @@
                             <td>{{ $inem->id_spp }}</td>
                             <td>{{ $inem->tahun }}</td>
                             <td>{{ $inem->nominal }}</td>
+                            <td><a href="#" class="btn btn-success btn-sm">
+                                <i class="bi bi-pencil-square"></i>
+                            </a></td>
+                            <td><a href="#" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash-fill"></i>
+                            </a></td>
                         </tr>
                     @endforeach
                 </tbody>

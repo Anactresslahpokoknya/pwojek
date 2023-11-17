@@ -47,3 +47,4 @@ Route::get('alphatauri', [AdminController::class, 'Grussel']);
 Route::get('mercedes', [AdminController::class, 'hamilton']);
 Route::get('mclaren', [AdminController::class, 'OscarPiastri']);
 Route::get('laren', [AdminController::class, 'norris']);
+Route::get('siswa/hapus/{nisn}',[AdminController::class,'hapus']);
