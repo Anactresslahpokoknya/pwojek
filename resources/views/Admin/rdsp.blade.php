@@ -1,11 +1,11 @@
-@extends('Siswa.LayoutSiswa')
-@section('isi_halaman')
+@extends('Admin.LayoutAdmin')
+@section('content')
     <div class="d-flex justify-content-center align-items-center vh-10000">
         <div class="card pt-4" style="width: 50rem;">
             <div class="card-body">
                 <form action="{{ url('mclaren') }}" method="get" enctype="multipart/form-data">
                     @csrf
-                    <h1>Entri Data Kelas</h1>
+                    <h1>Entri Data Spp</h1>
                     <div class="mb-3">
                         <label for="id_spp" class="form-label">ID SPP</label>
                         <input type="text" class="form-control" name="id_spp">

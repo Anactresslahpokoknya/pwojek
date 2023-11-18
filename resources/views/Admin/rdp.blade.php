@@ -1,5 +1,5 @@
-@extends('Siswa.LayoutSiswa')
-@section('isi_halaman')
+@extends('Admin.LayoutAdmin')
+@section('content')
     <div class="d-flex justify-content-center align-items-center vh-10000">
         <div class="card pt-4" style="width: 50rem;">
             <div class="card-body">
@@ -30,15 +30,6 @@
                                 <option value="petugas">Petugas</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="username" class="form-label">USERNAME</label>
-                        <input type="text" class="form-control" name="username">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">PASSWORD</label>
-                        <input type="password" class="form-control" name="password">
-                    </div>
                     <div class="mb-3">
                         <button class="btn form-control btn-primary mb-2">Entry</button>
                         <button class="btn form-control outline-succes mb-2" type="reset">Batal</button>

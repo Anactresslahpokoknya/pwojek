@@ -1,5 +1,5 @@
-@extends('Siswa.LayoutSiswa')
-@section('isi_halaman')
+@extends('Admin.LayoutAdmin')
+@section('content')
     <div class="d-flex justify-content-center align-items-center vh-10000">
         <div class="card pt-4" style="width: 50rem;">
             <div class="card-body">

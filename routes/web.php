@@ -48,3 +48,8 @@ Route::get('mercedes', [AdminController::class, 'hamilton']);
 Route::get('mclaren', [AdminController::class, 'OscarPiastri']);
 Route::get('laren', [AdminController::class, 'norris']);
 Route::get('siswa/hapus/{nisn}',[AdminController::class,'hapus']);
+Route::get('petugas/hapus/{id_petugas}',[AdminController::class,'hapus1']);
+Route::get('kelas/hapus/{id_kelas}',[AdminController::class,'hapus2']);
+Route::get('spp/hapus/{id_spp}',[AdminController::class,'hapus3']);
+Route::get('bayarh/hapus/{id_pembayaran}',[AdminController::class,'hapus4']);
+Route::get('siswa/edit/{nisn}',[AdminController::class,'edit']);

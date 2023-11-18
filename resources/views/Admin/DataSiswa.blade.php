@@ -1,6 +1,6 @@
 @extends('Admin.LayoutAdmin')
 @section('content')
-    <form action="{{ url('#') }}" method="get">
+    <form action="{{ url('mx') }}" method="get">
         @csrf
         <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
             <h4 class="card-title">Data Siswa</h4>
@@ -30,12 +30,17 @@
                             <td>{{ $inem->alamat }}</td>
                             <td>{{ $inem->no_telp }}</td>
                             <td>{{ $inem->id_spp }}</td>
-                            <td><a href="#" class="btn btn-success btn-sm">
+                            <td><a href="{{url('siswa/edit/'.$inem->nisn)}}" class="btn btn-success btn-sm">
                                     <i class="bi bi-pencil-square"></i>
                                 </a></td>
                                 <td><a href="{{url('siswa/hapus/'.$inem->nisn)}}" class="btn btn-danger btn-sm">
                                     <i class="bi bi-trash-fill"></i>
                                 </a></td>
+                                <td>
+                                    <div class="mb-3">
+                                        <button class="btn form-control btn-primary mb-2">tambah</button>
+                                    </div>
+                                </td>
                         </tr>
                     @endforeach
                 </tbody>

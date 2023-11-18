@@ -11,10 +11,6 @@
                         <input type="text" class="form-control" name="id_pembayaran">
                     </div>
                     <div class="mb-3">
-                        <label for="id_petugas" class="form-label">ID PETUGAS</label>
-                        <input type="text" class="form-control" name="id_petugas">
-                    </div>
-                    <div class="mb-3">
                         <label for="nisn" class="form-label">NISN</label>
                         <input type="text" class="form-control" name="nisn">
                     </div>

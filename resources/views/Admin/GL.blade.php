@@ -35,7 +35,7 @@
                             <td><a href="#" class="btn btn-success btn-sm">
                                 <i class="bi bi-pencil-square"></i>
                             </a></td>
-                            <td><a href="#" class="btn btn-danger btn-sm">
+                            <td><a href="{{url('bayarh/hapus/'.$inem->id_pembayaran)}}" class="btn btn-danger btn-sm">
                                 <i class="bi bi-trash-fill"></i>
                             </a></td>
                         </tr>

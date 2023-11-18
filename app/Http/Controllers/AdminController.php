@@ -163,4 +163,38 @@ class AdminController extends Controller
         $siswa->delete();
         return back()->with('pesan', 'selamat, registrasi berhasil');
     }
+
+    public function hapus1($id_petugas){
+        $siswa = new petugas();
+        $siswa = $siswa->find($id_petugas);
+        $siswa->delete();
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function hapus2($id_kelas){
+        $siswa = new kelas();
+        $siswa = $siswa->find($id_kelas);
+        $siswa->delete();
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function hapus3($id_spp){
+        $siswa = new spp();
+        $siswa = $siswa->find($id_spp);
+        $siswa->delete();
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function hapus4($id_pembayaran){
+        $siswa = new pembayaran();
+        $siswa = $siswa->find($id_pembayaran);
+        $siswa->delete();
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function edit($nisn){
+        $siswa = new siswa();
+        return  view ('Admin.rds',['wg'=>$siswa->find($nisn)->first()]);
+    }
+
 }
