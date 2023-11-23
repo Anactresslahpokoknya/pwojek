@@ -22,7 +22,7 @@
                             <td>{{ $inem->id_petugas }}</td>
                             <td>{{ $inem->nama_petugas }}</td>
                             <td>{{ $inem->level }}</td>
-                            <td><a href="#" class="btn btn-success btn-sm">
+                            <td><a href="{{url('petugas/edit/'.$inem->id_petugas)}}" class="btn btn-success btn-sm">
                                 <i class="bi bi-pencil-square"></i>
                             </a></td>
                             <td><a href="{{url('petugas/hapus/'.$inem->id_petugas)}}" class="btn btn-danger btn-sm">

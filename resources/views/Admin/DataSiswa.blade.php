@@ -1,6 +1,6 @@
 @extends('Admin.LayoutAdmin')
 @section('content')
-    <form action="{{ url('mx') }}" method="get">
+    <form action="{{ url('ln') }}" method="get">
         @csrf
         <div class="card-header d-flex text-bg-primary bg-gradient justify-content-between">
             <h4 class="card-title">Data Siswa</h4>

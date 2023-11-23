@@ -22,7 +22,7 @@
                             <td>{{ $inem->id_kelas }}</td>
                             <td>{{ $inem->nama_kelas }}</td>
                             <td>{{ $inem->kompetensi_keahlian }}</td>
-                            <td><a href="#" class="btn btn-success btn-sm">
+                            <td><a href="{{url('kelas/edit/'.$inem->id_kelas)}}" class="btn btn-success btn-sm">
                                     <i class="bi bi-pencil-square"></i>
                                 </a></td>
                             <td><a href="{{ url('kelas/hapus/' . $inem->id_kelas) }}" class="btn btn-danger btn-sm">

@@ -25,12 +25,8 @@
                     <form action="{{ url('IndexSiswa') }}" method="get" class="mt-5">
                         @csrf
                         <div class="mb-3">
-                            <input type="text" id="username" name="username" class="form-control py-2"
-                                placeholder="Username">
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" id="password" name="password" class="form-control py-2"
-                                placeholder="Password">
+                            <input type="text" id="nisn" name="nisn" class="form-control py-2"
+                                placeholder="NISN">
                         </div>
                         <div class="mb-3">
                             <button class="btn btn-outline-light form-control">Sign in</button>

@@ -32,7 +32,7 @@
                             <td>{{ $inem->tahun_dibayar }}</td>
                             <td>{{ $inem->id_spp }}</td>
                             <td>{{ $inem->jumlah_bayar }}</td>
-                            <td><a href="#" class="btn btn-success btn-sm">
+                            <td><a href="{{url('pembayaran/edit/'.$inem->id_pembayaran)}}" class="btn btn-success btn-sm">
                                 <i class="bi bi-pencil-square"></i>
                             </a></td>
                             <td><a href="{{url('bayarh/hapus/'.$inem->id_pembayaran)}}" class="btn btn-danger btn-sm">

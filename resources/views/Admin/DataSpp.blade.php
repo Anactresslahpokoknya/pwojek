@@ -22,7 +22,7 @@
                             <td>{{ $inem->id_spp }}</td>
                             <td>{{ $inem->tahun }}</td>
                             <td>{{ $inem->nominal }}</td>
-                            <td><a href="#" class="btn btn-success btn-sm">
+                            <td><a href="{{url('spp/edit/'.$inem->id_spp)}}" class="btn btn-success btn-sm">
                                 <i class="bi bi-pencil-square"></i>
                             </a></td>
                             <td><a href="{{url('spp/hapus/'.$inem->id_spp)}}" class="btn btn-danger btn-sm">

@@ -92,8 +92,7 @@ class AdminController extends Controller
             'alamat' => $request->alamat,
             'no_telp' => $request->no_telp,
             'id_spp' => $request->id_spp,
-            'username' => $request->username,
-            'password' => $request->password,
+
         ]);
 
         return back()->with('pesan', 'selamat, registrasi berhasil');
@@ -194,7 +193,98 @@ class AdminController extends Controller
 
     public function edit($nisn){
         $siswa = new siswa();
-        return  view ('Admin.rds',['wg'=>$siswa->find($nisn)->first()]);
+        return  view ('Admin.eds',['wg'=>$siswa->find($nisn)]);
     }
 
+    public function logic(Request $request,$nisn){
+        $validasi = $request->validate([
+            'nisn'=>'required',
+            'nis'=>'required',
+            'nama'=>'required',
+            'id_kelas'=>'required',
+            'alamat'=>'required',
+            'no_telp'=>'required',
+            'id_spp'=>'required',
+            'username'=>'required',
+            'password'=>'required',
+    
+        ]);
+        $siswa = new siswa();
+        $siswa = $siswa->find($nisn);
+        $siswa->update($request->all());
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function editp($id_petugas){
+        $siswa = new petugas();
+        return  view ('Admin.edp',['wg'=>$siswa->find($id_petugas)]);
+    }
+
+    public function logicp(Request $request,$id_petugas){
+        $validasi = $request->validate([
+            'id_petugas'=>'required',
+            'username'=>'required',
+            'password'=>'required',
+            'nama_petugas'=>'required',
+            'level'=>'required',
+        ]);
+        $siswa = new petugas();
+        $siswa = $siswa->find($id_petugas);
+        $siswa->update($request->all());
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function editK($id_kelas){
+        $siswa = new kelas();
+        return  view ('Admin.edk',['wg'=>$siswa->find($id_kelas)]);
+    }
+
+    public function logick(Request $request,$id_kelas){
+        $validasi = $request->validate([
+            'id_kelas'=>'required',
+            'nama_kelas'=>'required',
+            'kompetensi_keahlian'=>'required',
+        ]);
+        $siswa = new kelas();
+        $siswa = $siswa->find($id_kelas);
+        $siswa->update($request->all());
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function editspp($id_spp){
+        $siswa = new spp();
+        return  view ('Admin.edspp',['wg'=>$siswa->find($id_spp)]);
+    }
+
+    public function logicspp(Request $request,$id_spp){
+        $validasi = $request->validate([
+            'tahun'=>'required',
+            'nominal'=>'required',
+        ]);
+        $siswa = new spp();
+        $siswa = $siswa->find($id_spp);
+        $siswa->update($request->all());
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
+
+    public function editgcc($id_pembayaran){
+        $siswa = new pembayaran();
+        return  view ('Admin.gcc',['wg'=>$siswa->find($id_pembayaran)]);
+    }
+
+    public function logicgcc(Request $request,$id_pembayaran){
+        $validasi = $request->validate([
+            'id_petugas'=>'required',
+            'nisn'=>'required',
+            'tgl_bayar'=>'required',
+            'bulan_dibayar'=>'required',
+            'tahun_dibayar'=>'required',
+             'id_spp'=>'required',
+              'jumlah_bayar'=>'required',
+        ]);
+        $siswa = new pembayaran();
+        $siswa = $siswa->find($id_pembayaran);
+        $siswa->update($request->all());
+        return back()->with('pesan', 'selamat, registrasi berhasil');
+    }
 }
