@@ -7,6 +7,10 @@
                     @csrf
                     <h1>Entri Data Kelas</h1>
                     <div class="mb-3">
+                        <label for="id_kelas" class="form-label">ID KELAS</label>
+                        <input type="text" class="form-control" name="id_kelas">
+                    </div>
+                    <div class="mb-3">
                         <label for="nama_kelas" class="form-label">NAMA KELAS</label>
                         <input type="text" class="form-control" name="nama_kelas">
                     </div>

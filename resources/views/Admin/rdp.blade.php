@@ -7,6 +7,10 @@
                     @csrf
                     <h1>Entri Data Petugas</h1>
                     <div class="mb-3">
+                        <label for="id_petugas" class="form-label">ID PETUGAS</label>
+                        <input type="text" class="form-control" name="id_petugas">
+                    </div>
+                    <div class="mb-3">
                         <label for="username" class="form-label">USERNAME</label>
                         <input type="text" class="form-control" name="username">
                     </div>

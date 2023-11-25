@@ -29,6 +29,10 @@
                                 placeholder="NISN">
                         </div>
                         <div class="mb-3">
+                            <input type="text" id="captcha" name="nisn" class="form-control py-2"
+                                placeholder="CAPTCHA">
+                        </div>
+                        <div class="mb-3">
                             <button class="btn btn-outline-light form-control">Sign in</button>
                         </div>
                     </form>

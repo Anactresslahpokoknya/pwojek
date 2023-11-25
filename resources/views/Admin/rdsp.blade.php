@@ -7,6 +7,10 @@
                     @csrf
                     <h1>Entri Data Spp</h1>
                     <div class="mb-3">
+                        <label for="id_spp" class="form-label">ID SPP</label>
+                        <input type="text" class="form-control" name="id_spp">
+                    </div>
+                    <div class="mb-3">
                         <label for="tahun" class="form-label">TAHUN</label>
                         <input type="text" class="form-control" name="tahun">
                     </div>

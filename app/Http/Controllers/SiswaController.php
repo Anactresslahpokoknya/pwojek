@@ -14,11 +14,12 @@ class SiswaController extends Controller
     public function ceklogin(Request $request)
     {
         $p = new siswa();
-        $p = $p->where('nisn', $request->input('nisn'));
+        $p = $p->where('nisn', $request->input('nisn'))->where('captcha', $request->input('captcha'));
 
         if ($p->exists()) {
             session([
                 'nisn' => $request->input('nisn'),
+                'captcha' => $request->input('captcha'),
             ]);
             return redirect('/');
         }
